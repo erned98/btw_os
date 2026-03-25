@@ -67,7 +67,6 @@ else
 fi
 
 ## Productivity
-alias rec='ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :0.0 ~/Videos/Screencasts/rec-$(date +%y%m%d%H%M).mp4'
 alias ytmp4="yt-dlp -f 'bv*[height<=1080]+ba/b[height<=1080]' --merge-output-format mp4 --cookies-from-browser brave -N 10"
 alias ytmp3="yt-dlp -f 'bestaudio/best' --extract-audio --audio-format mp3 --audio-quality 320k --add-metadata --cookies-from-browser brave -N 10"
 alias ping='ping -c 5'
@@ -76,9 +75,8 @@ alias updgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
 ## For the memes
 alias fetch='echo && fastfetch'
-alias clr='colorscript -e blocks1'
 alias hello="notify-send 'Oh, hi! Nice to see you!' 'Remember to take regular breaks and drink water!'"
-alias btw="notify-send 'welcome eos forum' 'i use arch btw'"
+alias btw="notify-send 'i use arch btw'"
 alias pls='sudo $(fc -ln -1)'
 alias cmatrix='cmatrix -a'
 
@@ -124,7 +122,6 @@ fi
 }
 
 ## Package management
-# Pacman / Yay
 alias s='yay -S'
 alias sy='yay -Sy'
 alias syu='yay -Syu'
@@ -137,14 +134,3 @@ alias Q='pacman -Q'
 alias ql='pacman -Q | wc -l'
 alias si='pacman -Si'
 alias qdtq='yay -Rns $(pacman -Qdtq)'
-
-## APT / Nala
-# alias s='sudo nala install'
-# alias sy='sudo nala update'
-# alias syu='sudo nala upgrade'
-# alias rn='sudo nala purge'
-# alias rns='sudo nala purge --autoremove'
-# alias ss='nala search'
-# alias Q='apt list --installed | wc -l'
-# alias qdtq='sudo nala autoremove --purge'
-
