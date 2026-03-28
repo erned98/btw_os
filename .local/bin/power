@@ -8,9 +8,6 @@ do
     capacity=$(cat /sys/class/power_supply/BAT0/capacity)
 
     if [ "$capacity" -lt 10 ]; then
-        notify-send 'Your battery is critically low and discharging.' \
-        'Your computer will shut down. Save your unsaved work.'
-        sleep 60
         shutdown -h now
     elif [ "$capacity" -le 30 ]; then
         powerprofilesctl set power-saver

@@ -8,30 +8,8 @@ while true; do
     read -p "Do you wish to continue running the script? (y/n) " yn
     case $yn in
         [yes]* )
-            ## first of all, let's take care of mirrors
-            if [[ ! -e /usr/bin/reflector && ! -e /usr/bin/paccache ]]; then
-				sudo pacman -S --noconfirm reflector pacman-contrib
-			fi
-
-			sudo reflector --protocol https --verbose --latest 25 --sort rate --save /etc/pacman.d/mirrorlist
-            
-            ## let's set up Chaotic-AUR
-            # We start by retrieving the primary key to enable the installation of our keyring and mirror list.
-            sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
-            sudo pacman-key --lsign-key 3056513887B78AEB
-
-            # This allows us to install our chaotic-keyring and chaotic-mirrorlist packages.
-            sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
-            sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
-
-            # Then, we append (adding at the end) the following to /etc/pacman.conf:
-            sudo sed -i -e '$a\\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist' /etc/pacman.conf
- 
-            # We recommend running a full system update along syncing our mirrorlist.
-            sudo pacman -Syu rate-mirrors yay
-
-            ## now, let's install!
-            # let's install graphical environment and basic utilities
+            ## first of all, let's set some variables
+            # graphical environment and basic utilities
             PS3='Please choose your video drivers: '
             options=("Intel" "AMD" "Nvidia" "QXL" "Abort")
             select opt in "${options[@]}"
@@ -58,47 +36,63 @@ while true; do
                     *) echo "Option invalid.";;
                 esac
             done
+			
+			# basic utilities
+			export basic='$graphics zsh zsh-completions zsh-autosuggestions zsh-syntax-highlighting starship foot lsd bat mangowm waybar swww rofi dunst pulsemixer polkit-gnome ly swaylock pipewire pipewire-pulse pipewire-alsa alsa-utils pipewire-jack'
 
+			# basic apps
+			export apps='imv feh zathura zathura-pdf-mupdf ranger-git python-pillow fastfetch mpv gvim timeshift timeshift-autosnap grim slurp nwg-look htop w3m'
+
+			# eye-candy
+			export rice='ttf-iosevkaterm-nerd ttf-noto-emoji-monochrome dark-icon-theme-git terminus-font flat-remix-gtk fortune-mod noto-fonts-cjk'
+
+			# user-defined apps – EXAMINE THAT PART THOROUGHLY BEFORE RUNNING THE SCRIPT
+			export user='brave-bin android-tools libreoffice-fresh libqalculate spotify-player newsboat redshift wl-sunset wayland-utils mp3gain ffmpeg gimp'
+			
+			if [[ ! -e /usr/bin/reflector && ! -e /usr/bin/paccache ]]; then
+				sudo pacman -S --noconfirm reflector pacman-contrib
+			fi
+
+			sudo reflector --protocol https --verbose --latest 25 --sort rate --save /etc/pacman.d/mirrorlist
+            
+            ## let's set up Chaotic-AUR
+            # We start by retrieving the primary key to enable the installation of our keyring and mirror list.
+            sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
+            sudo pacman-key --lsign-key 3056513887B78AEB
+
+            # This allows us to install our chaotic-keyring and chaotic-mirrorlist packages.
+            sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
+            sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+
+            # Then, we append (adding at the end) the following to /etc/pacman.conf:
+            sudo sed -i -e '$a\\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist' /etc/pacman.conf
+ 
+            # We recommend running a full system update along syncing our mirrorlist.
+            sudo pacman -Syu rate-mirrors yay
+
+            ## now, let's install!
             echo -e '\n\e[1;96mInstalling graphical environment and basic utilities...'
-            yay -S --noconfirm $graphics zsh zsh-completions zsh-autosuggestions zsh-syntax-highlighting foot lsd bat mangowm waybar swww rofi dunst pulsemixer polkit-gnome ly swaylock pipewire pipewire-pulse pipewire-alsa alsa-utils pipewire-jack ufw
-            
-            # let's install basic apps
-            echo -e '\n\e[1;96mInstalling basic applications...'
-            yay -S --noconfirm imv zathura zathura-pdf-mupdf ranger python-pillow fastfetch mpv gvim timeshift grim slurp nwg-look htop w3m
+            yay -S --noconfirm $basic $apps $rice $user
 
-            # let's install some additional apps - EXAMINE THAT PART AND REDACT IT IF YOU WISH TO
-            echo -e '\n\e[1;96mInstalling user-defined applications...'
-            yay -S --noconfirm brave-bin android-tools libreoffice-fresh libqalculate spotify-player newsboat redshift wl-sunset wayland-utils mp3gain ffmpeg gimp
-            
-            # let's turn on some services
+			# let's turn on some services
             sudo systemctl enable ly@tty2.service
             sudo systemctl enable ufw.service
+			sudo ufw enable
 			chsh -s $(which zsh)
 
-			## first, let's install some components
-			yay -S --noconfirm ttf-iosevkaterm-nerd terminus-font flat-remix-gtk fortune-mod noto-fonts-cjk
-
 			## now, let's rice!
-			
 			cp -rv .config ~
 			cp -rv .local ~
 			cp -rv .vim ~
 			cp -rv scripts ~/Scripts
 			cp -rv wallpapers ~/Wallpapers
-			mkdir -pv ~/Pictures/Screenshots
-			sudo rm /usr/share/fortune/*
 			sudo cp -rv usr /
 			sudo cp -rv etc /
 			
 			for i in .bashrc .vimrc .viminfo
 			    do
-			        ln -rsfv $i ~/$i
-			        sudo ln -rsfv $i /root/~$i
+			        cp -rfv $i ~/$i
 			    done
-			
-			# spicetify backup apply enable-devtools
-			# spicetify config current_theme text
-			# spicetify config color_scheme FlatRemixEOS
 			
 			echo -e '\e[1;32mThe ricing has completed. \e[1;97mYou can reboot now. Have fun using your system!\e[0m'
             ;;
