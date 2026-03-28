@@ -13,4 +13,4 @@ fi
 
 # Set a wallpaper
 wallpaper=$(find "$wallpapersDir" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) | shuf -n 1)
-swww img "$wallpaper" --transition-type fade --transition-duration 1
+awww img "$wallpaper" --transition-type fade --transition-duration 1
