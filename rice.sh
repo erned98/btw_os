@@ -38,7 +38,7 @@ while true; do
             done
 			
 			# basic utilities
-			export basic='$graphics zsh zsh-completions zsh-autosuggestions zsh-syntax-highlighting starship foot lsd bat mangowm waybar awww rofi dunst pulsemixer polkit-gnome ly swaylock pipewire pipewire-pulse pipewire-alsa alsa-utils pipewire-jack'
+			export basic='zsh zsh-completions zsh-autosuggestions zsh-syntax-highlighting starship foot lsd bat mangowm waybar awww rofi dunst pulsemixer polkit-gnome ly swaylock pipewire pipewire-pulse pipewire-alsa alsa-utils pipewire-jack'
 
 			# basic apps
 			export apps='imv feh zathura zathura-pdf-mupdf ranger-git python-pillow fastfetch mpv gvim timeshift timeshift-autosnap grim slurp nwg-look htop w3m'
@@ -72,7 +72,7 @@ while true; do
 
             ## now, let's install!
             echo -e '\n\e[1;96mInstalling graphical environment and basic utilities...'
-            yay -S --noconfirm $basic $apps $rice $user
+            yay -S --noconfirm $graphics $basic $apps $rice $user
 
 			# let's turn on some services
             sudo systemctl enable ly@tty2.service
