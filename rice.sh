@@ -73,6 +73,7 @@ while true; do
             ## now, let's install!
             echo -e '\n\e[1;96mInstalling graphical environment and basic utilities...'
             yay -S --noconfirm $graphics $basic $apps $rice $user
+			sudo fc-cache -fv
 
 			# let's turn on some services
             sudo systemctl enable ly@tty2.service
