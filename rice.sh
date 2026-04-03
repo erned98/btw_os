@@ -47,7 +47,7 @@ while true; do
 			export rice='ttf-iosevkaterm-nerd ttf-noto-emoji-monochrome dark-icon-theme-git terminus-font flat-remix-gtk fortune-mod noto-fonts-cjk'
 
 			# user-defined apps – EXAMINE THAT PART THOROUGHLY BEFORE RUNNING THE SCRIPT
-			export user='brave-bin android-tools libreoffice-fresh libqalculate spotify-player newsboat redshift wl-sunset wayland-utils mp3gain ffmpeg gimp'
+			export user='brave-bin android-tools libreoffice-fresh libqalculate spotify-player newsboat redshift wl-sunset wayland-utils mp3gain ffmpeg wf-recorder gimp mpc mpd ncmpcpp playerctl syncthing'
 			
 			if [[ ! -e /usr/bin/reflector && ! -e /usr/bin/paccache ]]; then
 				sudo pacman -S --noconfirm reflector pacman-contrib
