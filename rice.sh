@@ -38,7 +38,7 @@ while true; do
             done
 			
 			# basic utilities
-			export basic='zsh zsh-completions zsh-autosuggestions zsh-syntax-highlighting starship foot lsd bat mangowm waybar awww rofi dunst pulsemixer polkit-gnome ly swaylock pipewire pipewire-pulse pipewire-alsa alsa-utils pipewire-jack'
+			export basic='zsh zsh-completions zsh-autosuggestions zsh-syntax-highlighting starship foot lsd bat mangowm waybar awww rofi dunst pulsemixer polkit-gnome ly swaylock pipewire pipewire-pulse pipewire-alsa alsa-utils pipewire-jack upower'
 
 			# basic apps
 			export apps='imv feh zathura zathura-pdf-mupdf ranger-git python-pillow fastfetch mpv gvim timeshift timeshift-autosnap grim slurp nwg-look htop w3m'
