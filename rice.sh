@@ -41,7 +41,7 @@ while true; do
 			export basic='zsh zsh-completions zsh-autosuggestions zsh-syntax-highlighting starship foot eza bat mangowm waybar awww rofi dunst pulsemixer polkit-gnome ly swaylock pipewire pipewire-pulse pipewire-alsa alsa-utils pipewire-jack upower'
 
 			# basic apps
-			export apps='imv feh zathura zathura-pdf-mupdf ranger-git python-pillow fastfetch mpv gvim timeshift timeshift-autosnap grim slurp nwg-look htop w3m'
+			export apps='imv feh zathura zathura-pdf-mupdf ranger-git python-pillow fastfetch mpv gvim timeshift timeshift-autosnap grim slurp nwg-look htop w3m wev'
 
 			# eye-candy
 			export rice='ttf-iosevkaterm-nerd ttf-noto-emoji-monochrome dark-icon-theme-git terminus-font flat-remix-gtk fortune-mod noto-fonts-cjk'
