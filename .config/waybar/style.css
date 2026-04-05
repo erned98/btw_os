@@ -4,7 +4,7 @@
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.85);
     color: #ffffff;
 }
 
@@ -24,14 +24,14 @@ window#waybar {
 }
 
 #workspaces button {
-    padding: 0 8px;
+    padding: 0 2px;
     background: transparent;
     border: none;
-    color: #51525d;
+    color: #7f7f7f;
 }
 
 #workspaces button.visible {
-    color: #51525d;
+    color: #ffffff;
 }
 
 #workspaces button.active {

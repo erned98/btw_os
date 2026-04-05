@@ -4,7 +4,7 @@
   "height": 36,
 
   "modules-left": [
-    "custom/lbracket",
+	"custom/lbracket",
 	"ext/workspaces",
 	"custom/rbracket",
     "dwl/window"
@@ -23,6 +23,10 @@
   
   "custom/sep": {
 	"format": "|"
+  },
+
+  "custom/space": {
+	"format": " "
   },
 
   "custom/lbracket": {
@@ -72,6 +76,10 @@
 
   "ext/workspaces": {
 	"format": "{icon}",
+	"format-icons": {
+		"active": "󰧞",
+		"default": "󰧟"
+	},
     "ignore-hidden": true,
     "on-click": "activate",
     "on-click-right": "deactivate",
