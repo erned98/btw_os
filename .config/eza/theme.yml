@@ -1,0 +1,535 @@
+filekinds:
+  directory:
+    icon: { glyph: "" }
+  normal:
+    icon: { glyph: "" }
+
+filenames:
+  Desktop:
+    icon: { glyph: "" }
+  Documents:
+    icon: { glyph: "" }
+  Downloads:
+    icon: { glyph: "" }
+  Dotfiles:
+    icon: { glyph: "" }
+  Dropbox:
+    icon: { glyph: "" }
+  Music:
+    icon: { glyph: "" }
+  Pictures:
+    icon: { glyph: "" }
+  Public:
+    icon: { glyph: "" }
+  Templates:
+    icon: { glyph: "" }
+  Videos:
+    icon: { glyph: "" }
+  OneDrive:
+    icon: { glyph: "" }
+  workspace:
+    icon: { glyph: "" }
+  .git:
+    icon: { glyph: "" }
+
+  Escritorio:
+    icon: { glyph: "" }
+  Documentos:
+    icon: { glyph: "" }
+  Descargas:
+    icon: { glyph: "" }
+  Música:
+    icon: { glyph: "" }
+  Imágenes:
+    icon: { glyph: "" }
+  Público:
+    icon: { glyph: "" }
+  Plantillas:
+    icon: { glyph: "" }
+  Vídeos:
+    icon: { glyph: "" }
+
+  Bureau:
+    icon: { glyph: "" }
+  Images:
+    icon: { glyph: "" }
+  Musique:
+    icon: { glyph: "" }
+  Publique:
+    icon: { glyph: "" }
+  Téléchargements:
+    icon: { glyph: "" }
+  Vidéos:
+    icon: { glyph: "" }
+
+  Imagens:
+    icon: { glyph: "" }
+  Modelos:
+    icon: { glyph: "" }
+  Área de trabalho:
+    icon: { glyph: "" }
+
+  Documenti:
+    icon: { glyph: "" }
+  Immagini:
+    icon: { glyph: "" }
+  Modelli:
+    icon: { glyph: "" }
+  Musica:
+    icon: { glyph: "" }
+  Pubblici:
+    icon: { glyph: "" }
+  Scaricati:
+    icon: { glyph: "" }
+  Scrivania:
+    icon: { glyph: "" }
+  Video:
+    icon: { glyph: "" }
+
+  Bilder:
+    icon: { glyph: "" }
+  Dokumente:
+    icon: { glyph: "" }
+  Musik:
+    icon: { glyph: "" }
+  Schreibtisch:
+    icon: { glyph: "" }
+  Vorlagen:
+    icon: { glyph: "" }
+  Öffentlich:
+    icon: { glyph: "" }
+
+  Dokumentumok:
+    icon: { glyph: "" }
+  Képek:
+    icon: { glyph: "" }
+  Zene:
+    icon: { glyph: "" }
+  Letöltések:
+    icon: { glyph: "" }
+  Számítógép:
+    icon: { glyph: "" }
+  Videók:
+    icon: { glyph: "" }
+
+  桌面:
+    icon: { glyph: "" }
+  文档:
+    icon: { glyph: "" }
+  下载:
+    icon: { glyph: "" }
+  音乐:
+    icon: { glyph: "" }
+  图片:
+    icon: { glyph: "" }
+  公共的:
+    icon: { glyph: "" }
+  公共:
+    icon: { glyph: "" }
+  模板:
+    icon: { glyph: "" }
+  视频:
+    icon: { glyph: "" }
+  文檔:
+    icon: { glyph: "" }
+  下載:
+    icon: { glyph: "" }
+  音樂:
+    icon: { glyph: "" }
+  圖片:
+    icon: { glyph: "" }
+  視頻:
+    icon: { glyph: "" }
+
+  Skrivbord:
+    icon: { glyph: "" }
+  Dokument:
+    icon: { glyph: "" }
+  Hämtningar:
+    icon: { glyph: "" }
+  Mallar:
+    icon: { glyph: "" }
+
+  Pulpit:
+    icon: { glyph: "" }
+  Dokumenty:
+    icon: { glyph: "" }
+  Pobrane:
+    icon: { glyph: "" }
+  Muzyka:
+    icon: { glyph: "" }
+  Obrazy:
+    icon: { glyph: "" }
+  Publiczne:
+    icon: { glyph: "" }
+  Szablony:
+    icon: { glyph: "" }
+  Wideo:
+    icon: { glyph: "" }
+
+  .bash_aliases:
+    icon: { glyph: "" }
+  .bash_history:
+    icon: { glyph: "" }
+  .bash_logout:
+    icon: { glyph: "" }
+  .bash_profile:
+    icon: { glyph: "" }
+  .bashprofile:
+    icon: { glyph: "" }
+  .bashrc:
+    icon: { glyph: "" }
+  .gitconfig:
+    icon: { glyph: "" }
+  .gitattributes:
+    icon: { glyph: "" }
+  .gitignore:
+    icon: { glyph: "" }
+  .gitlab-ci.yml:
+    icon: { glyph: "" }
+  .profile:
+    icon: { glyph: "" }
+  .vim:
+    icon: { glyph: "" }
+  .vimrc:
+    icon: { glyph: "" }
+  .zshrc:
+    icon: { glyph: "" }
+  Dockerfile:
+    icon: { glyph: "" }
+  dockerfile:
+    icon: { glyph: "" }
+  docker-compose.yml:
+    icon: { glyph: "" }
+  Makefile:
+    icon: { glyph: "" }
+  makefile:
+    icon: { glyph: "" }
+  package.json:
+    icon: { glyph: "" }
+  package-lock.json:
+    icon: { glyph: "" }
+  README:
+    icon: { glyph: "" }
+  README.md:
+    icon: { glyph: "" }
+  README.markdown:
+    icon: { glyph: "" }
+  README.rst:
+    icon: { glyph: "" }
+  README.txt:
+    icon: { glyph: "" }
+  webpack.config.js:
+    icon: { glyph: "" }
+
+extensions:
+  txt:
+    icon: { glyph: "" }
+  text:
+    icon: { glyph: "" }
+  log:
+    icon: { glyph: "" }
+  rst:
+    icon: { glyph: "" }
+  markdown:
+    icon: { glyph: "" }
+  md:
+    icon: { glyph: "" }
+  mdx:
+    icon: { glyph: "" }
+  rmd:
+    icon: { glyph: "" }
+
+  pdf:
+    icon: { glyph: "" }
+  doc:
+    icon: { glyph: "" }
+  docx:
+    icon: { glyph: "" }
+  docm:
+    icon: { glyph: "" }
+  wps:
+    icon: { glyph: "" }
+  wpt:
+    icon: { glyph: "" }
+  rtf:
+    icon: { glyph: "" }
+  pub:
+    icon: { glyph: "" }
+  ppt:
+    icon: { glyph: "" }
+  pptx:
+    icon: { glyph: "" }
+  pptm:
+    icon: { glyph: "" }
+  pot:
+    icon: { glyph: "" }
+  potx:
+    icon: { glyph: "" }
+  potm:
+    icon: { glyph: "" }
+  pps:
+    icon: { glyph: "" }
+  ppsx:
+    icon: { glyph: "" }
+  ppsm:
+    icon: { glyph: "" }
+  xls:
+    icon: { glyph: "" }
+  xlsx:
+    icon: { glyph: "" }
+  xlsm:
+    icon: { glyph: "" }
+  xlsb:
+    icon: { glyph: "" }
+  xlt:
+    icon: { glyph: "" }
+  xltx:
+    icon: { glyph: "" }
+  xltm:
+    icon: { glyph: "" }
+  xla:
+    icon: { glyph: "" }
+  xlam:
+    icon: { glyph: "" }
+
+  png:
+    icon: { glyph: "" }
+  jpg:
+    icon: { glyph: "" }
+  jpeg:
+    icon: { glyph: "" }
+  gif:
+    icon: { glyph: "" }
+  bmp:
+    icon: { glyph: "" }
+  webp:
+    icon: { glyph: "" }
+  ico:
+    icon: { glyph: "" }
+  ai:
+    icon: { glyph: "" }
+  psd:
+    icon: { glyph: "" }
+  psb:
+    icon: { glyph: "" }
+
+  mp3:
+    icon: { glyph: "" }
+  flac:
+    icon: { glyph: "" }
+  ogg:
+    icon: { glyph: "" }
+  opus:
+    icon: { glyph: "" }
+  wav:
+    icon: { glyph: "" }
+  m4a:
+    icon: { glyph: "" }
+  mka:
+    icon: { glyph: "" }
+  aup:
+    icon: { glyph: "" }
+  cue:
+    icon: { glyph: "" }
+
+  mp4:
+    icon: { glyph: "" }
+  mkv:
+    icon: { glyph: "" }
+  webm:
+    icon: { glyph: "" }
+  mov:
+    icon: { glyph: "" }
+  avi:
+    icon: { glyph: "" }
+  flv:
+    icon: { glyph: "" }
+  m4v:
+    icon: { glyph: "" }
+  mpeg:
+    icon: { glyph: "" }
+  mpg:
+    icon: { glyph: "" }
+
+  zip:
+    icon: { glyph: "" }
+  7z:
+    icon: { glyph: "" }
+  rar:
+    icon: { glyph: "" }
+  tar:
+    icon: { glyph: "" }
+  tgz:
+    icon: { glyph: "" }
+  gz:
+    icon: { glyph: "" }
+  gzip:
+    icon: { glyph: "" }
+  bz2:
+    icon: { glyph: "" }
+  xz:
+    icon: { glyph: "" }
+  lz:
+    icon: { glyph: "" }
+  lzh:
+    icon: { glyph: "" }
+  lzma:
+    icon: { glyph: "" }
+  cpio:
+    icon: { glyph: "" }
+  cab:
+    icon: { glyph: "" }
+  deb:
+    icon: { glyph: "" }
+  rpm:
+    icon: { glyph: "" }
+  xbps:
+    icon: { glyph: "" }
+  gem:
+    icon: { glyph: "" }
+
+  db:
+    icon: { glyph: "" }
+  sql:
+    icon: { glyph: "" }
+  dump:
+    icon: { glyph: "" }
+  img:
+    icon: { glyph: "" }
+  iso:
+    icon: { glyph: "" }
+
+  sh:
+    icon: { glyph: "" }
+  bash:
+    icon: { glyph: "" }
+  zsh:
+    icon: { glyph: "" }
+  fish:
+    icon: { glyph: "" }
+  ksh:
+    icon: { glyph: "" }
+  csh:
+    icon: { glyph: "" }
+  bat:
+    icon: { glyph: "" }
+  ps1:
+    icon: { glyph: "" }
+
+  conf:
+    icon: { glyph: "" }
+  config:
+    icon: { glyph: "" }
+  ini:
+    icon: { glyph: "" }
+  rc:
+    icon: { glyph: "" }
+  toml:
+    icon: { glyph: "" }
+  yaml:
+    icon: { glyph: "" }
+  yml:
+    icon: { glyph: "" }
+
+  html:
+    icon: { glyph: "" }
+  htm:
+    icon: { glyph: "" }
+  xhtml:
+    icon: { glyph: "" }
+  xml:
+    icon: { glyph: "" }
+  xul:
+    icon: { glyph: "" }
+  ejs:
+    icon: { glyph: "" }
+  haml:
+    icon: { glyph: "" }
+  hbs:
+    icon: { glyph: "" }
+  slim:
+    icon: { glyph: "" }
+  twig:
+    icon: { glyph: "" }
+  mustache:
+    icon: { glyph: "" }
+
+  css:
+    icon: { glyph: "" }
+  scss:
+    icon: { glyph: "" }
+  sass:
+    icon: { glyph: "" }
+  less:
+    icon: { glyph: "" }
+  styl:
+    icon: { glyph: "" }
+
+  js:
+    icon: { glyph: "" }
+  mjs:
+    icon: { glyph: "" }
+  jsx:
+    icon: { glyph: "" }
+  ts:
+    icon: { glyph: "" }
+  tsx:
+    icon: { glyph: "" }
+  py:
+    icon: { glyph: "" }
+  pyc:
+    icon: { glyph: "" }
+  pyd:
+    icon: { glyph: "" }
+  pyo:
+    icon: { glyph: "" }
+  rb:
+    icon: { glyph: "" }
+  rs:
+    icon: { glyph: "" }
+  vim:
+    icon: { glyph: "" }
+  vimrc:
+    icon: { glyph: "" }
+  nix:
+    icon: { glyph: "" }
+  svelte:
+    icon: { glyph: "" }
+  ipynb:
+    icon: { glyph: "" }
+  json:
+    icon: { glyph: "" }
+  jsonc:
+    icon: { glyph: "" }
+  webmanifest:
+    icon: { glyph: "" }
+
+  java:
+    icon: { glyph: "" }
+  jar:
+    icon: { glyph: "" }
+  class:
+    icon: { glyph: "" }
+  exe:
+    icon: { glyph: "" }
+  msi:
+    icon: { glyph: "" }
+  apk:
+    icon: { glyph: "" }
+  dll:
+    icon: { glyph: "" }
+  so:
+    icon: { glyph: "" }
+  efi:
+    icon: { glyph: "" }
+  elf:
+    icon: { glyph: "" }
+  rom:
+    icon: { glyph: "" }
+  torrent:
+    icon: { glyph: "" }
+  key:
+    icon: { glyph: "" }
+  rss:
+    icon: { glyph: "" }

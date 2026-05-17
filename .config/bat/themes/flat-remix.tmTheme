@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+ "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Flat Remix</string>
+
+    <key>settings</key>
+    <array>
+
+        <!-- Default -->
+        <dict>
+            <key>settings</key>
+            <dict>
+                <key>background</key>
+                <string>#000000</string>
+                <key>foreground</key>
+                <string>#e6e6e6</string> <!-- Constant -->
+            </dict>
+        </dict>
+
+        <!-- Comment -->
+        <dict>
+            <key>scope</key>
+            <string>comment</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#585858</string> <!-- cterm 240 -->
+                <key>fontStyle</key>
+                <string>italic</string>
+            </dict>
+        </dict>
+
+        <!-- Constant / String / Number -->
+        <dict>
+            <key>scope</key>
+            <string>constant, string</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#ffffff</string> <!-- cterm 15 -->
+            </dict>
+        </dict>
+
+        <!-- Statement (keywords, conditionals etc.) -->
+        <dict>
+            <key>scope</key>
+            <string>keyword, storage, keyword.control</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#49aee6</string> <!-- cterm 6 -->
+                <key>fontStyle</key>
+                <string>bold</string>
+            </dict>
+        </dict>
+
+        <!-- Type / Function -->
+        <dict>
+            <key>scope</key>
+            <string>entity.name.function, entity.name.type, support.type</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#49aee6</string> <!-- cterm 15 -->
+                <key>fontStyle</key>
+                <string>bold</string>
+            </dict>
+        </dict>
+
+        <!-- Operator -->
+        <dict>
+            <key>scope</key>
+            <string>keyword.operator</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#fea44c</string> <!-- cterm 2 -->
+                <key>fontStyle</key>
+                <string>bold</string>
+            </dict>
+        </dict>
+
+        <!-- Special -->
+        <dict>
+            <key>scope</key>
+            <string>constant.character.escape, punctuation</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#fea44c</string> <!-- cterm 6 -->
+                <key>fontStyle</key>
+                <string>bold italic</string>
+            </dict>
+        </dict>
+
+        <dict>
+            <key>scope</key>
+            <string>meta</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#49aee6</string> <!-- cterm 6 -->
+                <key>fontStyle</key>
+                <string>bold</string>
+            </dict>
+		</dict>
+
+        <!-- Error -->
+        <dict>
+            <key>scope</key>
+            <string>invalid</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#ffffff</string>
+                <key>background</key>
+                <string>#ec0101</string> <!-- cterm 9 -->
+            </dict>
+        </dict>
+
+    </array>
+</dict>
+</plist>
